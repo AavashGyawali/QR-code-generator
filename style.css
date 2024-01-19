@@ -23,8 +23,7 @@
 .right-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
+  gap: 5px;
 }
 .right-container-button {
   display: flex;
@@ -32,17 +31,22 @@
   align-items: center;
 }
 .qr1 {
-  height: 340px;
+  height: 341px;
+  width: 301px;
   background-color: #e0e0e0;
   border: 2px solid black;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .qr {
-  width: 301px;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 415px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
   gap: 25px;
 }
 
@@ -115,4 +119,9 @@ button {
   color: black;
   cursor: pointer;
   border: 2px solid black;
+}
+
+.qr-text {
+  height: 40px;
+  text-align: center;
 }
