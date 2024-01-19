@@ -17,6 +17,7 @@ function generateQRCode() {
       correctLevel: QRCode.CorrectLevel.H,
     });
     document.getElementById("qr-text1").innerHTML = website;
+
     // document.getElementById("qr_generator").style.display = "block";
   } else {
     alert("Please enter a valid URL");
@@ -26,6 +27,11 @@ function generateQRCode() {
 document.getElementById("button2").addEventListener("click", download);
 
 function download() {
-  var x = document.getElementById("qr_generator").innerHTML;
-  console.log(x);
+  const img = document.querySelector("img");
+  var link = document.createElement("a");
+  link.href = img.src;
+  link.download = "Download.jpg";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
