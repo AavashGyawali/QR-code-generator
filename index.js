@@ -22,3 +22,10 @@ function generateQRCode() {
     alert("Please enter a valid URL");
   }
 }
+
+document.getElementById("button2").addEventListener("click", download);
+
+function download() {
+  var x = document.getElementById("qr_generator").innerHTML;
+  console.log(x);
+}
