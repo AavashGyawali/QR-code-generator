@@ -17,6 +17,7 @@ function generateQRCode() {
       correctLevel: QRCode.CorrectLevel.H,
     });
     document.getElementById("qr-text1").innerHTML = website;
+    location.href = "#qr";
 
     // document.getElementById("qr_generator").style.display = "block";
   } else {
